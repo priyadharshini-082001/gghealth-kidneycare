@@ -14,15 +14,15 @@ Root Variables
 :root {
     --primary-color: #1E5AA8;
     --secondary-color: #000000;
-    --dark-color: #1FA84A;
+    --dark-color: rgb(0, 0, 0);
     --base-color: #1f1f1f;
     --text-color: #555555;
     --light-color: #f8f8f8;
     --white-color: #ffffff;
     --bg-color: #F6F3F0;
     --heading-font: "Raleway", sans-serif;
-    --titleFontFamily: "Yesteryear", cursive;
-    --body-font:'DM Sans', sans-serif;
+    --titleFontFamily:Poppins, sans-serif;
+    --body-font: Bebas Neue, sans-serif;
     --transition: all 0.3s ease;
     --border-radius: 12px;
     --footer-newsletter-bg-color: #f4b400;
@@ -17375,14 +17375,14 @@ Category Section
 
 .au2-feat-title {
     font-family: var(--heading-font);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 800;
     color: var(--dark-color);
     margin-bottom: 4px;
 }
 
 .au2-feat-text {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-color);
     line-height: 1.65;
     margin: 0;
