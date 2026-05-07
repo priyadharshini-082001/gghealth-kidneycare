@@ -3023,16 +3023,7 @@ Category Section
     overflow: hidden;
 }
 
-.cat-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(circle, rgba(255, 88, 27, .12) 1px, transparent 1px);
-    background-size: 30px 30px;
-    opacity: .45;
-    pointer-events: none;
-    z-index: 0;
-}
+
 
 .cat-orb {
     position: absolute;
@@ -3041,21 +3032,7 @@ Category Section
     z-index: 0;
 }
 
-.cat-orb-1 {
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255, 88, 27, .09) 0%, transparent 70%);
-    top: -100px;
-    right: -200px;
-}
 
-.cat-orb-2 {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(255, 88, 27, .07) 0%, transparent 70%);
-    bottom: 200px;
-    left: -150px;
-}
 
 .hs .container {
     max-width: 1220px;
