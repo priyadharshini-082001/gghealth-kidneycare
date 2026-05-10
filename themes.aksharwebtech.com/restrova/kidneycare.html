@@ -196,159 +196,147 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 </div>
             </nav>
         </header>
+        
+<section class="breadcrumb-section">
+    <div class="container">
+        
+        <h1>Contact</h1>
 
-
-
-
-
-        <!--SEARCH OVERLAY -->
-        <div class="srch-overlay" id="srchOverlay" role="dialog" aria-modal="true" aria-label="Site Search">
-            <div class="srch-backdrop"></div>
-            <div class="srch-ring srch-ring-1"></div>
-            <div class="srch-ring srch-ring-2"></div>
-            <div class="srch-ring srch-ring-3"></div>
-            <div class="srch-stripe"></div>
-            <div class="srch-content">
-                <!-- Top bar -->
-                <div class="srch-topbar">
-                    <a href="index.html" class="srch-logo">
-                        <img src="assets/images/logo.png" alt="Restrova">
-                    </a>
-                    <div class="srch-close-row">
-                        <div class="srch-esc-hint">
-                            <span class="srch-esc-key">ESC</span> to close
-                        </div>
-                        <button class="srch-close-btn" id="srchCloseBtn" onclick="srchClose()">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                </div>
-                <h2 class="section-heading text-white">
-                    What are you <span class="hero-highlight">looking for?</span>
-                </h2>
-                <p class="srch-sub">Search dishes, blog posts, products, reservations and more.</p>
-                <!-- Search input -->
-                <div class="srch-box-wrap">
-                    <div class="srch-box">
-                        <span class="srch-icon-left">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <input class="srch-input" id="srchInput" type="text"
-                            placeholder="e.g. Wagyu ribeye, truffle pasta…" autocomplete="off" spellcheck="false" />
-                        <button class="srch-clear-btn"
-                            onclick="document.getElementById('srchInput').value='';document.getElementById('srchInput').focus()"
-                            title="Clear"> <i class="fa-solid fa-xmark"></i> </button>
-                        <button class="btn-default btn-highlighted" type="submit"> Search </button>
-                    </div>
-                </div>
-                <!-- Quick Links -->
-                <div class="srch-quick-wrap">
-                    <div class="srch-quick-label">Quick Links</div>
-                    <div class="srch-quick-pills">
-                        <a href="menu.html" class="srch-pill"><i class="fa-solid fa-utensils"></i> Full Menu</a>
-                        <a href="reservation.html" class="srch-pill"><i class="fa-solid fa-calendar-check"></i>
-                            Reserve a Table</a>
-                        <a href="shop.html" class="srch-pill"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
-                        <a href="gallery.html" class="srch-pill"><i class="fa-solid fa-camera"></i> Gallery</a>
-                        <a href="blog.html" class="srch-pill"><i class="fa-solid fa-book-open"></i> Blog</a>
-                        <a href="about.html" class="srch-pill"><i class="fa-solid fa-users"></i> About Us</a>
-                        <a href="contact.html" class="srch-pill"><i class="fa-solid fa-phone"></i> Contact</a>
-                    </div>
-                </div>
-                <!-- Recent Searches -->
-                <div class="srch-recent-wrap">
-                    <div class="srch-recent-header">
-                        <div class="srch-recent-label">Recent Searches</div>
-                        <button class="srch-clear-all"><i class="fa-solid fa-trash-can"></i> Clear all</button>
-                    </div>
-                    <div class="srch-recent-list">
-                        <a href="shop.html" class="srch-recent-item">
-                            <div class="srch-ri-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                            <span class="srch-ri-text">Wagyu ribeye kit</span>
-                            <i class="fa-solid fa-arrow-right srch-ri-arrow"></i>
-                        </a>
-                        <a href="shop.html" class="srch-recent-item">
-                            <div class="srch-ri-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                            <span class="srch-ri-text">Truffle pasta recipe</span>
-                            <i class="fa-solid fa-arrow-right srch-ri-arrow"></i>
-                        </a>
-                        <a href="shop.html" class="srch-recent-item">
-                            <div class="srch-ri-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                            <span class="srch-ri-text">Table reservation Friday</span>
-                            <i class="fa-solid fa-arrow-right srch-ri-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Popular -->
-                <div class="srch-popular-wrap">
-                    <div class="srch-popular-label">Popular Right Now</div>
-                    <div class="srch-popular-grid">
-                        <a href="menu.html" class="srch-pop-card">
-                            <div class="srch-pop-img">
-                                <img src="assets/images/menu/ribeye-fiorentina.jpg" alt="Wagyu">
-                            </div>
-                            <div class="srch-pop-overlay"></div>
-                            <div class="srch-pop-info">
-                                <div class="srch-pop-cat">Signature</div>
-                                <div class="srch-pop-name">Wagyu Ribeye</div>
-                            </div>
-                        </a>
-                        <a href="menu.html" class="srch-pop-card">
-                            <div class="srch-pop-img">
-                                <img src="assets/images/menu/cacio-e-pepe.jpg" alt="Pasta">
-                            </div>
-                            <div class="srch-pop-overlay"></div>
-                            <div class="srch-pop-info">
-                                <div class="srch-pop-cat">Pasta</div>
-                                <div class="srch-pop-name">Truffle Tagliatelle</div>
-                            </div>
-                        </a>
-                        <a href="shop.html" class="srch-pop-card">
-                            <div class="srch-pop-img">
-                                <img src="assets/images/menu/vanilla-panna-cotta.jpg" alt="Dessert">
-                            </div>
-                            <div class="srch-pop-overlay"></div>
-                            <div class="srch-pop-info">
-                                <div class="srch-pop-cat">Desserts</div>
-                                <div class="srch-pop-name">Mango Soufflé</div>
-                            </div>
-                        </a>
-                        <a href="shop.html" class="srch-pop-card">
-                            <div class="srch-pop-img">
-                                <img src="assets/images/menu/burrata-classica.jpg" alt="Salad">
-                            </div>
-                            <div class="srch-pop-overlay"></div>
-                            <div class="srch-pop-info">
-                                <div class="srch-pop-cat">Shop</div>
-                                <div class="srch-pop-name">Meal Kits</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bottom info row -->
-                <div class="srch-bottom-row">
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-clock"></i> Updated daily
-                    </div>
-                    <div class="srch-bottom-divider"></div>
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-utensils"></i> 85+ dishes indexed
-                    </div>
-                    <div class="srch-bottom-divider"></div>
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-bolt"></i> Instant results
-                    </div>
-                    <div class="srch-bottom-divider"></div>
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-shield-halved"></i> Private &amp; secure
-                    </div>
-                </div>
-            </div>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <p>Contact</p>
         </div>
-        <!-- Breadcrumb -->
-  
-               
-      
+
+    </div>
+</section>
+
+
+        <!-- Main Content -->
+<!-- Main Content -->
+<!-- =========================
+     KIDNEY CARE SECTION
+========================= -->
+<!-- =========================
+     KIDNEY CARE SECTION
+========================= -->
+<section class="kc-top-section">
+
+    <div class="container">
+
+        <!-- Top Image -->
+        <div class="kc-top-image" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="assets/images/kidney.jpg" alt="Dr. Gowthaman Kidney Specialist">
+        </div>
+
+        <!-- Bottom Content -->
+        <div class="kc-top-content" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Small Heading -->
+            <span class="kc-subtitle">
+                Kidney Disease Care
+            </span>
+
+            <!-- Main Heading -->
+            <h2 class="kc-title">
+                Expert Care for <span>Healthy Kidneys</span>
+            </h2>
+
+            <!-- Paragraph -->
+            <p class="kc-description">
+                We provide advanced diagnosis and treatment for all types of kidney diseases
+                and urinary problems with personalized patient care. Our focus is on early
+                detection, effective treatment, and long-term kidney wellness through
+                modern nephrology care.
+            </p>
+
+            <!-- What is Kidney Disease -->
+            <div class="kc-info-box">
+
+                <h3 class="kc-info-title">
+                    <i class="fa-solid fa-kidneys"></i>
+                    What is Kidney Disease?
+                </h3>
+
+                <p class="kc-info-text">
+                    Kidney disease occurs when the kidneys cannot properly remove waste
+                    and excess fluids from the body, affecting overall health and body function.
+                    Early diagnosis and proper treatment can help prevent serious complications.
+                </p>
+
+            </div>
+
+            <!-- Symptoms / Diagnosis / Treatments -->
+            <div class="kc-grid">
+
+                <!-- Symptoms -->
+                <div class="kc-card">
+                    <div class="kc-card-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+                    <h4>Common Symptoms</h4>
+
+                    <ul>
+                        <li>Swelling in legs or face</li>
+                        <li>Frequent urination</li>
+                        <li>Blood or foam in urine</li>
+                        <li>Fatigue and weakness</li>
+                        <li>High blood pressure</li>
+                        <li>Back or side pain</li>
+                    </ul>
+                </div>
+
+                <!-- Diagnosis -->
+                <div class="kc-card">
+                    <div class="kc-card-icon">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+
+                    <h4>Diagnosis</h4>
+
+                    <ul>
+                        <li>Blood & urine tests</li>
+                        <li>Kidney ultrasound</li>
+                        <li>Blood pressure check</li>
+                        <li>Advanced kidney screening</li>
+                    </ul>
+                </div>
+
+                <!-- Treatments -->
+                <div class="kc-card">
+                    <div class="kc-card-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+
+                    <h4>Treatments</h4>
+
+                    <ul>
+                        <li>Medication & lifestyle management</li>
+                        <li>Diabetes & BP control</li>
+                        <li>Dialysis support</li>
+                        <li>Kidney stone treatment</li>
+                        <li>Chronic kidney disease care</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Highlights -->
+           
+            <!-- Button -->
+            <div class="kc-btn-wrap">
+                <a href="contact.html" class="kc-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- WhatsApp Floating Button -->
 <div class="wa-float" id="waBtn">
     <div class="wa-tooltip">Chat with us</div>

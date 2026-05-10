@@ -5008,67 +5008,6 @@ Category Section
 }
 
 /* ====================================
-   BREADCRUMB & PAGE BANNER
-====================================== */
-.page-banner {
-    position: relative;
-    height: 300px;
-    background: var(--dark-color);
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.page-banner__bg {
-    position: absolute;
-    inset: 0;
-    background: url('../images/page-banner.jpg') center/cover no-repeat;
-    opacity: .40;
-}
-
-.page-banner__content {
-    position: relative;
-    z-index: 2;
-}
-
-.page-banner__content .section-heading,
-.page-banner__content p {
-    color: var(--white-color);
-    margin-bottom: 5px;
-}
-
-.page-banner__breadcrumb {
-    position: absolute;
-    bottom: 28px;
-    right: 0;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.page-banner__breadcrumb a {
-    color: var(--white-color);
-    text-decoration: none;
-    transition: color .25s;
-}
-
-.page-banner__breadcrumb a:hover {
-    color: var(--primary-color);
-}
-
-.page-banner__breadcrumb span {
-    color: var(--primary-color);
-}
-
-.page-banner__breadcrumb i {
-    font-size: 10px;
-    color: var(--white-color);
-}
-
-/* ====================================
    CONTACT US PAGE
 ====================================== */
 .cp-wrap {
@@ -5079,7 +5018,7 @@ Category Section
 
 /* LEFT PANEL */
 .cp-left {
-    background:#dcf1ff;
+    background:#040351;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -5113,7 +5052,7 @@ Category Section
 .cp-left__ring {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(5, 44, 121, 0.18);
+    border: 1px solid rgba(218, 230, 255, 0.18);
     pointer-events: none;
     animation: ringFloat 6s ease-in-out infinite;
 }
@@ -5188,7 +5127,7 @@ Category Section
     gap: 10px;
     font-family: var(--titleFontFamily);
     font-size: 22px;
-    color: black;
+    color: rgb(255, 255, 255);
     letter-spacing: .03em;
 }
 
@@ -5196,7 +5135,7 @@ Category Section
     content: '';
     width: 32px;
     height: 2px;
-    background: var(--primary-color);
+    background: whitesmoke;
     border-radius: 2px;
     display: block;
 }
@@ -5205,13 +5144,13 @@ Category Section
     font-family: var(--heading-font);
     font-size: 60px;
     font-weight: 800;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 
 .cp-left__desc {
     font-size: 15px;
-    color: black;
+    color: rgb(255, 255, 255);
     line-height: 1.8;
     max-width: 380px;
     margin-bottom: 48px;
@@ -5235,8 +5174,8 @@ Category Section
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    background: rgba(255, 88, 27, .15);
-    border: 1px solid rgba(255, 88, 27, .25);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     display: grid;
     place-items: center;
     font-size: 15px;
@@ -5252,19 +5191,18 @@ Category Section
 }
 
 .cp-info-item__label {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 2px;
 }
 
 .cp-info-item__value {
-    font-family: var(--heading-font);
     font-size: 15px;
     font-weight: 700;
-    color: #000000;
+    color: #ffffff;
 }
 
 .cp-socials {
@@ -5290,7 +5228,7 @@ Category Section
     border-color: var(--primary-color);
     color: #fff;
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(255, 88, 27, .4);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
 }
 
 .cp-left__foot {
@@ -19122,7 +19060,7 @@ button[data-fancybox-close]:hover {
 
 .breadcrumb-section{
     padding:120px 0 70px;
-    background:url('/themes.aksharwebtech.com/restrova/assets/images/banner1.png');
+    background:url('/themes.aksharwebtech.com/restrova/assets/images/shopbanner.png');
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
     background-size: cover;
@@ -19159,4 +19097,525 @@ button[data-fancybox-close]:hover {
 
 .breadcrumb span{
     color:#cbd5e1;
+}
+
+/* FOOTER WRAPPER */
+.cp-left__foot{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:40px;
+}
+
+/* TIME BOX */
+.cp-left__hours{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:16px 24px;
+    border-radius:50px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    line-height:1.6;
+    transition:0.3s ease;
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+}
+
+/* HOVER EFFECT */
+.cp-left__hours:hover{
+    transform:translateY(-4px);
+    background:rgba(27,133,255,0.18);
+    border-color:rgba(27,133,255,0.35);
+}
+
+/* GREEN DOT */
+.cp-left__hours-dot{
+    width:10px;
+    height:10px;
+    min-width:10px;
+    border-radius:50%;
+    background:#00d084;
+    box-shadow:0 0 10px #00d084;
+}
+
+/* HIGHLIGHT TEXT */
+.cp-left__hours strong{
+    color:#1b85ff;
+    font-weight:700;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .cp-left__foot{
+        flex-direction:column;
+    }
+
+    .cp-left__hours{
+        width:100%;
+        border-radius:18px;
+        padding:14px 18px;
+        font-size:14px;
+    }
+}
+
+/*====================================
+    KIDNEY CARE SECTION
+    MODERN MILD BLUE THEME
+====================================*/
+.kc-top-section{
+    position: relative;
+    padding: 120px 0;
+    background: linear-gradient(180deg,#f8fbff 0%,#edf5ff 100%);
+    overflow: hidden;
+}
+
+/* Soft Background Shapes */
+.kc-top-section::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(96,165,250,0.10);
+    top: -220px;
+    right: -180px;
+    filter: blur(20px);
+}
+
+.kc-top-section::after{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(191,219,254,0.35);
+    bottom: -160px;
+    left: -120px;
+    filter: blur(15px);
+}
+
+/*====================================
+    TOP IMAGE
+====================================*/
+.kc-top-image{
+    position: relative;
+    z-index: 2;
+    max-width: 880px;
+    margin: 0 auto;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(15,23,42,0.10);
+}
+
+.kc-top-image::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        rgba(15,23,42,0.25),
+        rgba(15,23,42,0.02));
+    z-index: 1;
+}
+
+.kc-top-image img{
+    width: 100%;
+    display: block;
+    border-radius: 40px;
+    transition: 0.6s ease;
+}
+
+.kc-top-image:hover img{
+    transform: scale(1.04);
+}
+
+/* Floating Soft Pattern */
+.kc-top-image::after{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255,0.18);
+    border-radius: 50%;
+    top: -70px;
+    right: -50px;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+/*====================================
+    CONTENT BOX
+====================================*/
+.kc-top-content{
+    position: relative;
+    z-index: 5;
+    max-width: 1080px;
+    margin: -90px auto 0;
+    padding: 70px;
+    border-radius: 38px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 70px rgba(15,23,42,0.08);
+    overflow: hidden;
+}
+
+/* Stylish Pattern */
+.kc-top-content::before{
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle,
+        rgba(147,197,253,0.25) 0%,
+        rgba(147,197,253,0) 70%);
+    top: -80px;
+    right: -80px;
+}
+
+/* Bottom Accent */
+.kc-top-content::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 6px;
+    background: linear-gradient(90deg,#60a5fa,#93c5fd);
+    border-radius: 20px;
+    left: 70px;
+    bottom: 0;
+}
+
+/*====================================
+    SUBTITLE
+====================================*/
+.kc-subtitle{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border-radius: 60px;
+    background: rgba(96,165,250,0.10);
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+/*====================================
+    TITLE
+====================================*/
+.kc-title{
+    font-size: 58px;
+    line-height: 1.12;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 28px;
+}
+
+.kc-title span{
+    color: #3b82f6;
+    position: relative;
+}
+
+/* Underline Style */
+.kc-title span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 12px;
+    background: rgba(147,197,253,0.35);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/*====================================
+    DESCRIPTION
+====================================*/
+.kc-description{
+    font-size: 17px;
+    line-height: 2;
+    color: #475569;
+    margin-bottom: 22px;
+}
+
+/*====================================
+    INFO BOX
+====================================*/
+.kc-info-box{
+    position: relative;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#ffffff,#f7fbff);
+    border: 1px solid #dbeafe;
+    box-shadow: 0 15px 40px rgba(15,23,42,0.04);
+}
+
+/* Soft Left Border */
+.kc-info-box::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 5px;
+    height: 80px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,#60a5fa,#93c5fd);
+}
+
+.kc-info-title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 18px;
+}
+
+.kc-info-title i{
+    color: #3b82f6;
+}
+
+.kc-info-text{
+    font-size: 16px;
+    line-height: 1.9;
+    color: #475569;
+}
+
+/*====================================
+    GRID CARDS
+====================================*/
+.kc-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.kc-card{
+    position: relative;
+    background: rgba(255,255,255,0.95);
+    border-radius: 32px;
+    padding: 38px 30px;
+    border: 1px solid #e2e8f0;
+    transition: 0.45s ease;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(15,23,42,0.05);
+}
+
+/* Hover Glow */
+.kc-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(96,165,250,0.16);
+}
+
+/* Card Pattern */
+.kc-card::before{
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: rgba(147,197,253,0.10);
+    border-radius: 50%;
+    top: -60px;
+    right: -40px;
+}
+
+/*====================================
+    ICON
+====================================*/
+.kc-card-icon{
+    width: 78px;
+    height: 78px;
+    border-radius: 24px;
+    background: linear-gradient(135deg,#60a5fa,#93c5fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 15px 35px rgba(96,165,250,0.28);
+}
+
+.kc-card-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+/*====================================
+    CARD TITLE
+====================================*/
+.kc-card h4{
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 22px;
+}
+
+/*====================================
+    LISTS
+====================================*/
+.kc-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kc-card ul li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.kc-card ul li::before{
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #60a5fa;
+}
+
+/*====================================
+    HIGHLIGHTS
+====================================*/
+.kc-highlight-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 55px;
+}
+
+.kc-highlight-item{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 24px;
+    border-radius: 60px;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.35s ease;
+}
+
+.kc-highlight-item i{
+    color: #3b82f6;
+}
+
+.kc-highlight-item:hover{
+    background: linear-gradient(135deg,#60a5fa,#93c5fd);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.kc-highlight-item:hover i{
+    color: #fff;
+}
+
+/*====================================
+    BUTTON
+====================================*/
+.kc-btn-wrap{
+    margin-top: 55px;
+}
+
+.kc-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 42px;
+    border-radius: 60px;
+    background: linear-gradient(135deg,#60a5fa,#3b82f6);
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.4s ease;
+    box-shadow: 0 18px 45px rgba(96,165,250,0.28);
+}
+
+.kc-btn:hover{
+    transform: translateY(-6px);
+    color: #fff;
+}
+
+/*====================================
+    RESPONSIVE
+====================================*/
+@media(max-width:991px){
+
+    .kc-top-content{
+        padding: 45px 35px;
+    }
+
+    .kc-title{
+        font-size: 42px;
+    }
+
+    .kc-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:767px){
+
+    .kc-top-section{
+        padding: 80px 0;
+    }
+
+    .kc-top-content{
+        margin-top: -45px;
+        padding: 30px 22px;
+        border-radius: 28px;
+    }
+
+    .kc-top-image,
+    .kc-top-image img{
+        border-radius: 28px;
+    }
+
+    .kc-title{
+        font-size: 32px;
+    }
+
+    .kc-description,
+    .kc-info-text{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .kc-info-title{
+        font-size: 22px;
+    }
+
+    .kc-card{
+        padding: 28px 22px;
+    }
+
+    .kc-card h4{
+        font-size: 20px;
+    }
+
+    .kc-highlight-item{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kc-btn{
+        width: 100%;
+    }
 }
