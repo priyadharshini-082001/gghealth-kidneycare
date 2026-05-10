@@ -23,6 +23,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Yesteryear&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <body>
     <!-- Loader -->
 <div id="loader">
@@ -128,67 +130,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                                 </div>
                             </li>
                            
-                            <li class="nav-item has-dropdown">
-                                <a class="nav-link">
-                                   Special Treatments<i class="fa-solid fa-angle-down nav-arrow"></i>
-                                </a>
-                                <div class="mega-dropdown dropdown-mega">
-                                    <div class="dropdown-arrow"></div>
-                              <div class="mega-col">
-                        
-                                        <a href="faq.html" class="drop-row">
-                                            <span class="drop-body">
-                                                <strong>Kidney Disease Care</strong>
-                                            </span>
-                                        </a>
-                                        <a href="terms-conditions.html" class="drop-row">
-                                            <span class="drop-body">
-                                                <strong>Dialysis Support</strong>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="service.html">Services</a>
+                               </li>
 
-                                            </span>
-                                        </a>
-                                        <a href="privacy-policy.html" class="drop-row">
-                                            <span class="drop-body">
-                                                <strong>Diabetic Kidney Care</strong>
-                                           
-                                            </span>
-                                        </a>
-                                        <a href="404.html" class="drop-row">
-                                          
-                                            <span class="drop-body">
-                                                <strong>Hypertension Treatment</strong>
-                                     
-                                            </span>
-                                        </a>
-                                    </div>
-                          
-                                    <div class="mega-divider"></div>
-                                    <div class="mega-col">
-                                        <a href="faq.html" class="drop-row">
-                                            <span class="drop-body">
-                                                <strong>Urinary Infection Care</strong>
-                                  
-                                            </span>
-                                        </a>
-                                        <a href="terms-conditions.html" class="drop-row">
-                                            <span class="drop-body">
-                                                <strong>Kidney Transplant Consultation</strong>
-                                            </span>
-                                        </a>
-                                     
-                                    
-                                    </div>
-                                </div>
-                            </li>
-                           
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
+
                         </ul>
                         <!-- Right Side -->
                         <div class="header-actions">
                            
-                            <a href="reservation.html" class="btn-default">
+                            <a href="contact.html" class="btn-default">
                                 Appointment
                             </a>
                         </div>
@@ -196,81 +150,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 </div>
             </nav>
         </header>
-        <!--SEARCH OVERLAY -->
-        <div class="srch-overlay" id="srchOverlay" role="dialog" aria-modal="true" aria-label="Site Search">
-            <div class="srch-backdrop"></div>
-            <div class="srch-ring srch-ring-1"></div>
-            <div class="srch-ring srch-ring-2"></div>
-            <div class="srch-ring srch-ring-3"></div>
-            <div class="srch-stripe"></div>
-            <div class="srch-content">
-                <!-- Top bar -->
-                <div class="srch-topbar">
-                    <a href="index.html" class="srch-logo">
-                        <img src="assets/images/log.png" alt="Restrova">
-                    </a>
-                    <div class="srch-close-row">
-                        <div class="srch-esc-hint">
-                            <span class="srch-esc-key">ESC</span> to close
-                        </div>
-                        <button class="srch-close-btn" id="srchCloseBtn" onclick="srchClose()">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                </div>
-                <h2 class="section-heading text-white">
-                    What are you <span class="hero-highlight">looking for?</span>
-                </h2>
-                <p class="srch-sub">Search dishes, blog posts, products, reservations and more.</p>
-                <!-- Search input -->
-                <div class="srch-box-wrap">
-                    <div class="srch-box">
-                        <span class="srch-icon-left">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <input class="srch-input" id="srchInput" type="text"
-                            placeholder="e.g. Wagyu ribeye, truffle pasta…" />
-                        <button class="srch-clear-btn"
-                            onclick="document.getElementById('srchInput').value='';document.getElementById('srchInput').focus()"
-                            title="Clear"> <i class="fa-solid fa-xmark"></i> </button>
-                        <button class="btn-default btn-highlighted" type="submit"> Search </button>
-                    </div>
-                </div>
-                <!-- Quick Links -->
-                <div class="srch-quick-wrap">
-                    <div class="srch-quick-label">Quick Links</div>
-                    <div class="srch-quick-pills">
-                        <a href="menu.html" class="srch-pill"><i class="fa-solid fa-utensils"></i> Full Menu</a>
-                        <a href="reservation.html" class="srch-pill"><i class="fa-solid fa-calendar-check"></i>
-                            Reserve a Table</a>
-                        <a href="shop.html" class="srch-pill"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
-                        <a href="gallery.html" class="srch-pill"><i class="fa-solid fa-camera"></i> Gallery</a>
-                        <a href="blog.html" class="srch-pill"><i class="fa-solid fa-book-open"></i> Blog</a>
-                        <a href="about.html" class="srch-pill"><i class="fa-solid fa-users"></i> About Us</a>
-                        <a href="contact.html" class="srch-pill"><i class="fa-solid fa-phone"></i> Contact</a>
-                    </div>
-                </div>
-               
-                <!-- Bottom info row -->
-                <div class="srch-bottom-row">
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-clock"></i> Updated daily
-                    </div>
-                    <div class="srch-bottom-divider"></div>
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-utensils"></i> 85+ dishes indexed
-                    </div>
-                    <div class="srch-bottom-divider"></div>
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-bolt"></i> Instant results
-                    </div>
-                    <div class="srch-bottom-divider"></div>
-                    <div class="srch-bottom-item">
-                        <i class="fa-solid fa-shield-halved"></i> Private &amp; secure
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
         <!-- HERO SECTION -->
 
 <section class="hero-slider">
@@ -623,11 +504,268 @@ Leading Nephrologist and Associate Professor & HOD of Nephrology at Thanjavur Me
 </section>
 
 
+<!-- =========================
+     SPECIAL TREATMENTS SECTION
+========================= -->
+<!-- =========================
+     SPECIAL TREATMENTS CAROUSEL
+========================= -->
+<section class="ms-section">
+
+    <div class="container">
+
+
+   <!-- Heading -->
+        <div class="history-heading text-center">
+           <div class="cat-header">
+                    <div class="eyebrow" data-aos="fade-up" data-aos-duration="600">
+                        <span class="eyebrow-line"></span> Special Treatments<span class="eyebrow-line"></span>
+                    </div>
+                 
+                  <p data-aos="fade-up" 
+   data-aos-delay="200" 
+   data-aos-duration="700" 
+   style="text-align: justify; color: black; margin-top:2%; font-size:16px; line-height: 1.9;">
+
+    We provide comprehensive kidney care and advanced nephrology treatments 
+    focused on improving kidney health, preventing complications, and enhancing 
+    overall wellbeing. Our specialized services include diagnosis and treatment 
+    for chronic kidney disease, dialysis support, diabetic kidney complications, 
+    hypertension management, urinary tract disorders, and kidney transplant consultation. 
+    With personalized patient care, modern medical technology, and expert guidance, 
+    we are committed to helping patients maintain healthy kidney function and 
+    achieve a better quality of life.
+
+</p>
+                </div>
+
+
+       
+        </div>
 
 
 
+        <!-- Swiper -->
+        <div class="swiper msSwiper">
 
+            <div class="swiper-wrapper">
 
+                <!-- Kidney Disease Care -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/kidney.jpg" alt="Kidney Disease Care">
+                        </div>
+
+                        <div class="ms-icon">
+                             <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+
+                        <h3>Kidney Disease Care</h3>
+
+                        <p>
+                            Advanced diagnosis and treatment for chronic
+                            kidney disease with personalized patient care.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Dialysis Support -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/dialysis.jpg" alt="Dialysis Support">
+                        </div>
+
+                        <div class="ms-icon">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+
+                        <h3>Dialysis Support</h3>
+
+                        <p>
+                            Safe and effective dialysis treatment with
+                            continuous monitoring and expert guidance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Diabetic Kidney Care -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/dia.jpg" alt="Diabetic Kidney Care">
+                        </div>
+
+                        <div class="ms-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <h3>Diabetic Kidney Care</h3>
+
+                        <p>
+                            Specialized kidney care for diabetic patients
+                            to prevent complications and kidney damage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Hypertension Treatment -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/hyp.jpg" alt="Hypertension Treatment">
+                        </div>
+
+                        <div class="ms-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+
+                        <h3>Hypertension Treatment</h3>
+
+                        <p>
+                            Effective blood pressure management to protect
+                            kidney function and improve overall health.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Urinary Infection Care -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/urinary.jpg" alt="Urinary Infection Care">
+                        </div>
+
+                        <div class="ms-icon">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+
+                        <h3>Urinary Infection Care</h3>
+
+                        <p>
+                            Complete treatment for urinary tract infections
+                            with advanced diagnostic support.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Diet & Lifestyle Guidance -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/diet.jpg" alt="Diet Guidance">
+                        </div>
+
+                        <div class="ms-icon">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+
+                        <h3>Diet & Lifestyle Guidance</h3>
+
+                        <p>
+                            Personalized nutrition and lifestyle plans
+                            to support healthy kidney function.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Kidney Transplant Consultation -->
+                <div class="swiper-slide">
+
+                    <div class="ms-card">
+
+                        <div class="ms-image">
+                            <img src="assets/images/tran.jpg" alt="Kidney Transplant Consultation">
+                        </div>
+
+                        <div class="ms-icon">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+
+                        <h3>Kidney Transplant Consultation</h3>
+
+                        <p>
+                            Expert consultation and guidance for kidney
+                            transplant evaluation and post-care support.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".msSwiper", {
+
+    loop: true,
+    speed: 1000,
+    spaceBetween: 30,
+    grabCursor: true,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+
+        0: {
+            slidesPerView: 1,
+        },
+
+        768: {
+            slidesPerView: 2,
+        },
+
+        1200: {
+            slidesPerView: 3,
+        }
+    }
+});
+</script>
 
         <!-- VALUES -->
             <div class="au2-values" style="background-color: #f3fdff;">
@@ -922,7 +1060,7 @@ Leading Nephrologist and Associate Professor & HOD of Nephrology at Thanjavur Me
 <!-- WhatsApp Floating Button -->
 <div class="wa-float" id="waBtn">
     <div class="wa-tooltip">Chat with us</div>
-    <a href="https://wa.me/919876543210" target="_blank">
+    <a href="https://wa.me/9943590413" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 </div>
@@ -988,23 +1126,23 @@ Leading Nephrologist and Associate Professor & HOD of Nephrology at Thanjavur Me
                                 <h5 class="footer-column-title">Quick Menu</h5>
                                 <ul class="footer-links">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="menu.html">About</a></li>
-                                    <li><a href="about.html">Medical Lab & Shop</a></li>
-                                    <li><a href="reservation.html">Services</a></li>
-                                    <li><a href="blog.html">Contact</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="mvmedical.html">Medical Lab & Shop</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                             <!-- Services -->
                             <div class="footer-column" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
                                 <h5 class="footer-column-title">Our Services</h5>
                                 <ul class="footer-links">
-                     <li><a href="shop.html">Kidney Disease Care</a></li>
-<li><a href="menu.html">Dialysis Support</a></li>
-<li><a href="shop.html">Diabetic Kidney Care</a></li>
-<li><a href="contact.html">Hypertension Treatment</a></li>
-<li><a href="reservation.html">Urinary Infection Care</a></li>
-<li><a href="contact.html">Diet & Lifestyle Guidance</a></li>
-<li><a href="contact.html">Kidney Transplant Consultation</a></li>
+                     <li><a href="#">Kidney Disease Care</a></li>
+<li><a href="#">Dialysis Support</a></li>
+<li><a href="#">Diabetic Kidney Care</a></li>
+<li><a href="#">Hypertension Treatment</a></li>
+<li><a href="#">Urinary Infection Care</a></li>
+<li><a href="#">Diet & Lifestyle Guidance</a></li>
+<li><a href="#">Kidney Transplant Consultation</a></li>
                                     
                                 </ul>
                             </div>
@@ -1044,9 +1182,9 @@ Saipriya Lab-7:00am-11:00am & 2:00pm-8:00pm</p>
                                 <p class="copyright-text">
                                     &copy; 2026 G.G. Health & Kidney Care  All Rights Reserved.
                                     <span class="divider">|</span>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                    <a href="#">Privacy Policy</a>
                                     <span class="divider">|</span>
-                                    <a href="terms-conditions.html">Terms & Conditions</a>
+                                    <a href="#">Terms & Conditions</a>
                                 </p>
                                 <div class="payment-methods">
                                     <p class="copyright-text" style="font-family: 'Dancing Script', cursive;">
