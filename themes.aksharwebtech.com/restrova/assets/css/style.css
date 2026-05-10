@@ -2487,6 +2487,7 @@ About Us Section
     font-weight: 800;
     color: var(--dark-color);
     margin-bottom: 20px;
+    line-height: 1.3;
 }
 
 .about-section {
@@ -2773,7 +2774,7 @@ About Us Section
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-family: var(--titleFontFamily);
+    font-family: 'Dancing Script', cursive;
     font-size: 22px;
     color: var(--primary-color);
     letter-spacing: .03em;
@@ -5078,7 +5079,7 @@ Category Section
 
 /* LEFT PANEL */
 .cp-left {
-    background: var(--dark-color);
+    background:#dcf1ff;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -5100,7 +5101,7 @@ Category Section
     font-family: var(--heading-font);
     font-size: 150px;
     font-weight: 900;
-    color: rgba(255, 255, 255, .03);
+    color: rgba(0, 0, 0, 0.03);
     line-height: 1;
     right: 0px;
     bottom: -25px;
@@ -5112,7 +5113,7 @@ Category Section
 .cp-left__ring {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(255, 88, 27, .18);
+    border: 1px solid rgba(5, 44, 121, 0.18);
     pointer-events: none;
     animation: ringFloat 6s ease-in-out infinite;
 }
@@ -5187,7 +5188,7 @@ Category Section
     gap: 10px;
     font-family: var(--titleFontFamily);
     font-size: 22px;
-    color: var(--primary-color);
+    color: black;
     letter-spacing: .03em;
 }
 
@@ -5204,13 +5205,13 @@ Category Section
     font-family: var(--heading-font);
     font-size: 60px;
     font-weight: 800;
-    color: var(--white-color);
+    color: black;
     margin-bottom: 20px;
 }
 
 .cp-left__desc {
     font-size: 15px;
-    color: rgba(255, 255, 255, .45);
+    color: black;
     line-height: 1.8;
     max-width: 380px;
     margin-bottom: 48px;
@@ -5255,7 +5256,7 @@ Category Section
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .3);
+    color: black;
     margin-bottom: 2px;
 }
 
@@ -5263,7 +5264,7 @@ Category Section
     font-family: var(--heading-font);
     font-size: 15px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
 }
 
 .cp-socials {
@@ -19045,4 +19046,117 @@ button[data-fancybox-close]:hover {
     .history-image {
         height: 220px;
     }
+}
+
+
+/* FULL SCREEN */
+#loader{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100vh;
+    background:#f7fbff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:99999;
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+/* SOFT BACKGROUND */
+.loader-bg{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(27,133,255,0.08);
+    filter:blur(100px);
+    border-radius:50%;
+}
+
+/* LOGO CONTAINER */
+.loader-logo{
+    position:relative;
+    width:180px;
+    height:180px;
+    margin:0 auto 22px;
+    border-radius:50%;
+    background:#fff;
+    padding:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:
+        0 8px 25px rgba(27,133,255,0.18),
+        0 0 0 6px rgba(27,133,255,0.06);
+    z-index:2;
+    overflow:hidden;
+}
+
+/* LOGO IMAGE */
+.loader-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;   /* Important */
+    border-radius:50%;
+    background:#fff;
+    padding:6px;
+}
+
+/* OPTIONAL GLOW EFFECT */
+.loader-logo::before{
+    content:"";
+    position:absolute;
+    inset:-8px;
+    border-radius:50%;
+    border:2px dashed rgba(27,133,255,0.35);
+    animation:rotate 10s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes rotate{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.breadcrumb-section{
+    padding:120px 0 70px;
+    background:url('/themes.aksharwebtech.com/restrova/assets/images/banner1.png');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color:#fff;
+}
+
+.breadcrumb-section h1{
+    font-size:48px;
+    margin-bottom:15px;
+    font-weight:700;
+    color: white;
+}
+
+.breadcrumb{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.breadcrumb a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.breadcrumb p{
+    margin:0;
+    color:#fff;
+}
+
+.breadcrumb span{
+    color:#cbd5e1;
 }
