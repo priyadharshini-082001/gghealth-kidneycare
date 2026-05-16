@@ -303,144 +303,203 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 
     
-    <!-- RIGHT SIDE -->
-    <div class="cp-right"
-         data-aos="fade-left"
-         data-aos-delay="100"
-         data-aos-duration="800">
+  <!-- RIGHT SIDE -->
+<div class="cp-right"
+     data-aos="fade-left"
+     data-aos-delay="100"
+     data-aos-duration="800">
 
-        <div class="cp-form-wrap">
+    <div class="cp-form-wrap">
 
-            <div class="cp-form-head">
+        <div class="cp-form-head">
 
-                <div class="cp-form-head__title">
-                    Book an Appointment
+            <div class="cp-form-head__title">
+                Book an Appointment
+            </div>
+
+            <div class="cp-form-head__sub">
+                Our team will contact you shortly for confirmation and assistance.
+            </div>
+
+        </div>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="successMsg"
+             style="display:none;
+                    background:#d1e7dd;
+                    color:#0f5132;
+                    padding:14px;
+                    border-radius:10px;
+                    margin-bottom:20px;
+                    font-weight:600;">
+            Appointment Submitted Successfully!
+        </div>
+
+        <!-- FORM -->
+        <form id="contactForm">
+
+            <!-- NAME -->
+            <div class="cp-field-row">
+
+                <div class="cp-field">
+
+                    <div class="cp-label">
+                        Patient Name
+                    </div>
+
+                    <div class="cp-input-wrap">
+
+                        <input class="cp-input"
+                               type="text"
+                               name="name"
+                               placeholder="Enter Your Name"
+                               required>
+
+                        <i class="fas fa-user"></i>
+
+                    </div>
+
                 </div>
 
-                <div class="cp-form-head__sub">
-                    Our team will contact you shortly for confirmation and assistance.
+                <div class="cp-field">
+
+                    <div class="cp-label">
+                        Age
+                    </div>
+
+                    <div class="cp-input-wrap">
+
+                        <input class="cp-input"
+                               type="number"
+                               name="age"
+                               placeholder="Age">
+
+                        <i class="fas fa-calendar"></i>
+
+                    </div>
+
                 </div>
 
             </div>
 
-            <!-- FORM -->
-            <form action="javascript:void(0);" id="contactForm">
+            <!-- PHONE -->
+            <div class="cp-field">
 
-                <!-- NAME -->
-                <div class="cp-field-row">
+                <div class="cp-label">
+                    Phone Number
+                </div>
 
-                    <div class="cp-field">
+                <div class="cp-input-wrap">
 
-                        <div class="cp-label">
-                            Patient Name
-                        </div>
+                    <input class="cp-input"
+                           type="tel"
+                           name="phone"
+                           placeholder="9943590413"
+                           required>
 
-                        <div class="cp-input-wrap">
-
-                            <input class="cp-input"
-                                   type="text"
-                                   placeholder="Enter Your Name"
-                                   required>
-
-                            <i class="fas fa-user"></i>
-
-                        </div>
-
-                    </div>
-
-                    <div class="cp-field">
-
-                        <div class="cp-label">
-                            Age
-                        </div>
-
-                        <div class="cp-input-wrap">
-
-                            <input class="cp-input"
-                                   type="number"
-                                   placeholder="Age">
-
-                            <i class="fas fa-calendar"></i>
-
-                        </div>
-
-                    </div>
+                    <i class="fas fa-phone-alt"></i>
 
                 </div>
 
-                <!-- PHONE -->
-                <div class="cp-field">
+            </div>
 
-                    <div class="cp-label">
-                        Phone Number
-                    </div>
+            <!-- EMAIL -->
+            <div class="cp-field">
 
-                    <div class="cp-input-wrap">
+                <div class="cp-label">
+                    Email Address
+                </div>
 
-                        <input class="cp-input"
-                               type="tel"
-                               placeholder="9943590413">
+                <div class="cp-input-wrap">
 
-                        <i class="fas fa-phone-alt"></i>
+                    <input class="cp-input"
+                           type="email"
+                           name="email"
+                           placeholder="example@gmail.com">
 
-                    </div>
+                    <i class="fas fa-envelope"></i>
 
                 </div>
 
-                <!-- EMAIL -->
-                <div class="cp-field">
+            </div>
 
-                    <div class="cp-label">
-                        Email Address
-                    </div>
+            <!-- MESSAGE -->
+            <div class="cp-field">
 
-                    <div class="cp-input-wrap">
+                <div class="cp-label">
+                    Health Concern
+                </div>
 
-                        <input class="cp-input"
-                               type="email"
-                               placeholder="example@gmail.com">
+                <div class="cp-input-wrap textarea-wrap">
 
-                        <i class="fas fa-envelope"></i>
+                    <textarea class="cp-input cp-textarea"
+                              name="message"
+                              placeholder="Describe your kidney-related health concern..."
+                              required></textarea>
 
-                    </div>
+                    <i class="fas fa-notes-medical"></i>
 
                 </div>
 
-                <!-- MESSAGE -->
-                <div class="cp-field">
+            </div>
 
-                    <div class="cp-label">
-                        Health Concern
-                    </div>
+            <!-- BUTTON -->
+            <button type="submit" class="btn-default">
 
-                    <div class="cp-input-wrap textarea-wrap">
+                <span>
+                    Book Appointment
+                </span>
 
-                        <textarea class="cp-input cp-textarea"
-                                  placeholder="Describe your kidney-related health concern..."
-                                  required></textarea>
+            </button>
 
-                        <i class="fas fa-notes-medical"></i>
-
-                    </div>
-
-                </div>
-
-                <!-- BUTTON -->
-                <button type="submit" class="btn-default">
-
-                    <span>
-                        Book Appointment
-                    </span>
-
-                </button>
-
-            </form>
-
-        </div>
+        </form>
 
     </div>
 
 </div>
+
+
+
+
+<script>
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbzQsyt1TbalJW2RXzRFPyfAAPSWTdUJxhOEUrwkUwN-im9nM7akQHL4rWLnjvjtbXnRgA/exec";
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", e => {
+
+    e.preventDefault();
+
+    fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(form)
+    })
+
+    .then(res => res.json())
+
+    .then(data => {
+
+        document.getElementById("successMsg").style.display = "block";
+
+        form.reset();
+
+    })
+
+    .catch(error => {
+
+        alert("Something went wrong!");
+
+        console.error(error);
+
+    });
+
+});
+
+</script>
+
+
+
 
 
 

@@ -53,6 +53,57 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </div>
 
 </div>
+
+<!-- IMAGE POPUP -->
+<div id="popupOverlay" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <!-- CLOSE BUTTON -->
+        <span class="popup-close" id="closePopup">&times;</span>
+
+        <!-- IMAGE -->
+        <img src="assets/images/popup.png" alt="Popup Image">
+
+    </div>
+
+</div>
+
+<script>
+
+/* SHOW POPUP AFTER PRELOADER */
+window.addEventListener("load", function(){
+
+    setTimeout(function(){
+
+        document
+        .getElementById("popupOverlay")
+        .classList.add("active");
+
+    }, 2500);
+
+});
+
+
+/* CLOSE POPUP */
+document
+.getElementById("closePopup")
+.addEventListener("click", function(){
+
+    document
+        .getElementById("popupOverlay")
+        .classList.remove("active");
+
+});
+
+</script>
+
+
+
+
+
+
+
     <div class="overflow-wrapper">
         <!-- HEADER SECTION -->
         <!-- TOP BAR -->
